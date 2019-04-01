@@ -1,0 +1,90 @@
+jee@jee-Aspire-E5-573:~$ echo hello world
+hello world
+
+jee@jee-Aspire-E5-573:~$ passwd
+Changing password for jee.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+jee@jee-Aspire-E5-573:~$ date 
+Thứ hai, 01 Tháng 4 năm 2019 10:40:13 +07
+
+jee@jee-Aspire-E5-573:~$ hostname
+jee-Aspire-E5-573
+
+jee@jee-Aspire-E5-573:~$ arch 
+x86_64
+
+jee@jee-Aspire-E5-573:~$ uname -a
+Linux jee-Aspire-E5-573 4.18.0-15-generic #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+jee@jee-Aspire-E5-573:~$ uptime 
+ 10:41:52 up  1:10,  1 user,  load average: 0,35, 0,58, 0,55
+
+jee@jee-Aspire-E5-573:~$ who am i 
+
+jee@jee-Aspire-E5-573:~$ whoami
+jee
+
+jee@jee-Aspire-E5-573:~$ who
+jee      :0           2019-04-01 23:32 (:0)
+
+jee@jee-Aspire-E5-573:~$ id
+uid=1000(jee) gid=1000(jee) groups=1000(jee),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+
+jee@jee-Aspire-E5-573:~$ last 
+jee      :0           :0               Mon Apr  1 23:32   still logged in
+reboot   system boot  4.18.0-15-generi Mon Apr  1 23:31   still running
+jee      :0           :0               Mon Apr  1 14:46 - 14:50  (00:03)
+reboot   system boot  4.18.0-15-generi Mon Apr  1 14:43 - 14:50  (00:07)
+
+wtmp begins Mon Apr  1 14:43:01 2019
+jee@jee-Aspire-E5-573:~$ w
+ 10:42:25 up  1:10,  1 user,  load average: 0,21, 0,52, 0,53
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+jee      :0       :0               23:32   ?xdm?   1:04   0.00s /usr/lib/gdm3/g
+jee@jee-Aspire-E5-573:~$ finger
+
+Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+jee@jee-Aspire-E5-573:~$ finger
+
+Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+jee@jee-Aspire-E5-573:~$ sudo apt install finger
+[sudo] password for jee: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  finger
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 15,6 kB of archives.
+After this operation, 48,1 kB of additional disk space will be used.
+Get:1 http://vn.archive.ubuntu.com/ubuntu bionic/universe amd64 finger amd64 0.17-15.1 [15,6 kB]
+Fetched 15,6 kB in 2s (7.114 B/s) 
+Selecting previously unselected package finger.
+(Reading database ... 160579 files and directories currently installed.)
+Preparing to unpack .../finger_0.17-15.1_amd64.deb ...
+Unpacking finger (0.17-15.1) ...
+Setting up finger (0.17-15.1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+
+jee@jee-Aspire-E5-573:~$ finger
+Login     Name       Tty      Idle  Login Time   Office     Office Phone
+jee       Jee       *:0             Apr  1 23:32 (:0)
+jee@jee-Aspire-E5-573:~$ dmesg
+
+[    0.000000] microcode: microcode updated early to revision 0x24, date = 2018-04-02
+[    0.000000] Linux version 4.18.0-15-generic (buildd@lcy01-amd64-029) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #16~18.04.1-Ubuntu SMP Thu Feb 7 14:06:04 UTC 2019 (Ubuntu 4.18.0-15.16~18.04.1-generic 4.18.20)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.18.0-15-generic root=UUID=67906a6a-c0cd-4d81-8601-7c9cdf91cbf3 ro quiet splash vt.handoff=1
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+
