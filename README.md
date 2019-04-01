@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *Put your name here*
-* ID: *Put your ID here*
+* Name: Dao Anh Hong 
+* ID: USTH Bi8 068
 
 
