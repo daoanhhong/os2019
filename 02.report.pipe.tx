@@ -1,0 +1,25 @@
+jee@jee-Aspire-E5-573:~$ find ./Pictures/ -name *.jpg
+./Pictures/5b94d0767221ceb80d68ed6b807074ab.jpg
+./Pictures/wp2382569-billie-eilish-wallpapers.jpg
+jee@jee-Aspire-E5-573:~$ find ./Pictures/ -name *.jpg |wc -l
+2
+jee@jee-Aspire-E5-573:~$ grep 'list' ./
+grep: ./: Is a directory
+jee@jee-Aspire-E5-573:~$ wc -l /etc/passwd
+41 /etc/passwd
+jee@jee-Aspire-E5-573:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        3964616     2201436      525668      280308     1237512     1226588
+Swap:       7999484           0     7999484
+jee@jee-Aspire-E5-573:~$ cd /proc/
+jee@jee-Aspire-E5-573:/proc$ more cpuinfo 
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 69
+model name	: Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz
+stepping	: 1
+microcode	: 0x24
+cpu MHz		: 998.659
+cache size	: 3072 KB
+
