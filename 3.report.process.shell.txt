@@ -1,0 +1,42 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2 225572  9296 ?        Ss   20:27   0:07 /sbin/init spla
+sh
+root         2  0.0  0.0      0     0 ?        S    20:27   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   20:27   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   20:27   0:00 [rcu_par_gp]
+root         6  0.0  0.0      0     0 ?        I<   20:27   0:00 [kworker/0:0H-k
+b]
+root         9  0.0  0.0      0     0 ?        I<   20:27   0:00 [mm_percpu_wq]
+root        10  0.0  0.0      0     0 ?        S    20:27   0:00 [ksoftirqd/0
+
+jee@jee-Aspire-E5-573:~$ gnome- claculator 
+
+
+jee@jee-Aspire-E5-573:~$ ps aux | grep gnome-calculator
+jee       7839  1.6  1.0 722008 39672 pts/0    Sl+  23:03   0:00 gnome-calculator
+
+
+jee@jee-Aspire-E5-573:/proc/7839$ more status 
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+Tgid:	7839
+Ngid:	0
+Pid:	7839
+PPid:	7812
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+
+jee@jee-Aspire-E5-573:~$ kill -STOP 7839
+jee@jee-Aspire-E5-573:~$ gnome-calculator
+
+[1]+  Stopped                 gnome-calculator
+
+
+jee@jee-Aspire-E5-573:~$ kill -CONT 7839
+jee@jee-Aspire-E5-573:~$ kill -KILL 7839
+
+
+
