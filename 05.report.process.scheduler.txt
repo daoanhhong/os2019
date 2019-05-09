@@ -1,0 +1,18 @@
+jee@jee-Aspire-E5-573:~$ grep systemd /proc/sched_debug
+ Ssystemd-timesyn   764        94.919778       553   120         0.000000       571.675587         0.000000 0 0 /autogroup-32
+ S systemd-logind   844       158.543093      7651   120         0.000000       475.212522         0.000000 0 0 /autogroup-40
+ S        systemd  1282       273.055405       415   120         0.000000       634.779040         0.000000 0 0 /autogroup-91
+ S  systemd-udevd   336      3084.343667      2578   120         0.000000      1491.915797         0.000000 0 0 /autogroup-20
+ S        systemd     1      2103.669106    591902   120         0.000000     13283.139414         0.000000 0 0 /autogroup-2
+ Ssystemd-journal   282       362.592369      3221   119         0.000000       982.678230         0.000000 0 0 /autogroup-9
+ Ssystemd-resolve   763       569.854661      5762   120         0.000000      2506.562964         0.000000 0 0 /autogroup-30
+ S        systemd   973        43.599666       112   120         0.000000        60.910085         0.000000 0 0 /autogroup-68
+jee@jee-Aspire-E5-573:~$ grep switch /proc/1282/sched
+nr_switches                                  :                  415
+nr_voluntary_switches                        :                  375
+nr_involuntary_switches                      :                   40
+jee@jee-Aspire-E5-573:~$ grep switch /proc/1/sched
+nr_switches                                  :               594004
+nr_voluntary_switches                        :               593234
+nr_involuntary_switches                      :                  770
+
