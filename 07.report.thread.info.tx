@@ -1,0 +1,11 @@
+jee@jee-Aspire-E5-573:~$ ps aux | grep firefox | awk '{print $2}'
+3129
+3193
+3313
+3367
+3525
+3641
+jee@jee-Aspire-E5-573:~$ ps -o nlwp 3129
+NLWP
+  61
+
